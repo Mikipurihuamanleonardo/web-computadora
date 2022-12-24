@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/estilos.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="img/icono1.png">
+    <title>COMPRAS DE COMPUTADORAS</title>
 </head>
 <body>
     <!--barra de menu header-->
@@ -15,76 +16,79 @@
         </ul>
     </header>
     
-  <h1>Calculadora de precios</h1>
+    <section>
+  <h1>CALCULADORA DE PRECIOS</h1>
   <!-- Primer dropdown list de productos -->
-    <label for="producto1">PLACA MADRE</label>
+    <label  class="forletra" for="producto1">PLACA MADRE</label><br>
     <select id="producto1" name="producto1" class="controls">
         <option value="0">Selecciona una opción</option>
-        <option value="10">placa thomahot b560 ($300)</option>
-        <option value="20">asus Primerx360 ($200)</option>
-        <option value="30">msi h410m  ($260)</option>
+        <option value="300">placa thomahot b560 ($300)</option>
+        <option value="200">asus Primerx360 ($200)</option>
+        <option value="260">msi h410m  ($260)</option>
     </select>
     <br>
     <!-- Segundo dropdown list de productos -->
-    <label for="producto2">MEMORIA RAN</label>
+    <label class="forletra" for="producto2">MEMORIA RAN</label><br>
     <select id="producto2" name="producto2" class="controls">
         <option value="0">Selecciona una opción</option>
-        <option value="10">kingthons x8gb ($250)</option>
-        <option value="20">sangung x8 gb ($250)</option>
-        <option value="30">crusial 4gb ($150)</option>
+        <option value="250">kingthons x8gb ($250)</option>
+        <option value="250">sangung x8 gb ($250)</option>
+        <option value="150">crusial 4gb ($150)</option>
     </select>
     <br>
     <!-- Tercero dropdown list de productos -->
-    <label for="producto3">PROCESADORES</label>
+    <label class="forletra" for="producto3">PROCESADORES</label><br>
     <select id="producto3" name="producto3" class="controls">
         <option value="0">Selecciona una opción</option>
-        <option value="10">Producto 1 ($10)</option>
-        <option value="20">Producto 2 ($20)</option>
-        <option value="30">Producto 3 ($30)</option>
+        <option value="400">core!7 6ta Generación ($400)</option>
+        <option value="300">Amd Rizen 5 5600g ($300)</option>
+        <option value="200">Amd Rizen 3 3200g($ 200)</option>
     </select>
     <br>
     <!-- Cuarto dropdown list de productos -->
-    <label for="producto4">TARJETA DE VIDEOS</label>
+    <label class="forletra" for="producto4">TARJETA DE VIDEOS</label><br>
     <select id="producto4" name="producto4" class="controls">
         <option value="0">Selecciona una opción</option>
-        <option value="10">Producto 1 ($10)</option>
-        <option value="20">Producto 2 ($20)</option>
-        <option value="30">Producto 3 ($30)</option>
+        <option value="1000">Msi gerfote GTX1650 ($1000)</option>
+        <option value="900">gybabyte GTX1660 2 ($900)</option>
+        <option value="190">Radeon 4gb ($190)</option>
     </select>
     <br>
 
     <!-- Quinto dropdown list de productos -->
-    <label for="producto5">DISCOS DUROS</label>
+    <label class="forletra" for="producto5">DISCOS DUROS</label><br>
     <select id="producto5" name="producto5" class="controls">
         <option value="0">Selecciona una opción</option>
-        <option value="10">Producto 1 ($10)</option>
-        <option value="20">Producto 2 ($20)</option>
-        <option value="30">Producto 3 ($30)</option>
+        <option value="160">wester digital  500gb ($160)</option>
+        <option value="450">nv2 sansumg 1TB($450)</option>
+        <option value="180"> kinsgthon Solido 250gb gb($180)</option>
     </select>
     <br>
 
     <!-- Sextodropdown list de productos -->
-    <label for="producto6">COMBO TECLADO + MOUSE</label>
+    <label class="forletra" for="producto6">COMBO TECLADO + MOUSE</label><br>
     <select id="producto6" name="producto6" class="controls">
         <option value="0">Selecciona una opción</option>
-        <option value="10">Producto 1 ($10)</option>
-        <option value="20">Producto 2 ($20)</option>
-        <option value="30">Producto 3 ($30)</option>
+        <option value="100">teros  ($100)</option>
+        <option value="200">micronics ($200)</option>
+        <option value="250">redragon ($250)</option>
     </select>
     <br>
 
     <!-- Septimo dropdown list de productos -->
-    <label for="producto7">MONITORES</label>
+    <label class="forletra" for="producto7">MONITORES</label><br>
     <select id="producto7" name="producto7" class="controls">
         <option value="0">Selecciona una opción</option>
-        <option value="10">Producto 1 ($10)</option>
-        <option value="20">Producto 2 ($20)</option>
-        <option value="30">Producto 3 ($30)</option>
+        <option value="600">sansumg 27° pulgadas 1 ($600)</option>
+        <option value="400">teros 27° pulgadas($400)</option>
+        <option value="290">Lenovo 19° pulgadas ($290)</option>
     </select>
     <br>
     
-    <label for="total">Total:</label>
+    <label class="forletra" for="total">Total:</label><br>
     <input type="text" id="total" name="total" value="$0" readonly>
+</section>
+
 
 <script>
     // Obtener los elementos select y input
@@ -119,6 +123,7 @@
         // Actualizar el valor del elemento input
         total.value = `$${suma}`;
         }
+   
 
 
 </script>

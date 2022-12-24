@@ -134,7 +134,7 @@ h1{
     padding: 1.5em;
     text-align: center;
     margin: 2px;
-    background-image: url(/img/contacto.jpg);
+    
   }
   
   /* Popup de equipos 
@@ -249,7 +249,13 @@ Lo que haremos será simplemente poner la propiedad visibility en visible, y reg
   .controls{
     width: 30%;
     padding: 5px;
-    border-radius: 5px;
-    margin-bottom: 9px;
+    border-radius: 6px;
+    margin-bottom: 10px;
     padding: 2.8px;
   }
+.forletra{
+  color: #194569;
+  font-size: 30px;
+  font-family: arial;
+  
+}
