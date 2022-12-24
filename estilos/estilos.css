@@ -245,3 +245,11 @@ Lo que haremos será simplemente poner la propiedad visibility en visible, y reg
     width: auto;
     max-width: 224px;
   }
+  /*estilos del listado del formulario*/
+  .controls{
+    width: 30%;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 9px;
+    padding: 2.8px;
+  }

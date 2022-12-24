@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--barra de menu header-->
+    <header>
+        <ul class="menu-ul">
+            <li class="menu-li"><a href="computadora.html">INICIO</a></li>
+        </ul>
+    </header>
+    
+  <h1>Calculadora de precios</h1>
+  <!-- Primer dropdown list de productos -->
+    <label for="producto1">PLACA MADRE</label>
+    <select id="producto1" name="producto1" class="controls">
+        <option value="0">Selecciona una opción</option>
+        <option value="10">placa thomahot b560 ($300)</option>
+        <option value="20">asus Primerx360 ($200)</option>
+        <option value="30">msi h410m  ($260)</option>
+    </select>
+    <br>
+    <!-- Segundo dropdown list de productos -->
+    <label for="producto2">MEMORIA RAN</label>
+    <select id="producto2" name="producto2" class="controls">
+        <option value="0">Selecciona una opción</option>
+        <option value="10">kingthons x8gb ($250)</option>
+        <option value="20">sangung x8 gb ($250)</option>
+        <option value="30">crusial 4gb ($150)</option>
+    </select>
+    <br>
+    <!-- Tercero dropdown list de productos -->
+    <label for="producto3">PROCESADORES</label>
+    <select id="producto3" name="producto3" class="controls">
+        <option value="0">Selecciona una opción</option>
+        <option value="10">Producto 1 ($10)</option>
+        <option value="20">Producto 2 ($20)</option>
+        <option value="30">Producto 3 ($30)</option>
+    </select>
+    <br>
+    <!-- Cuarto dropdown list de productos -->
+    <label for="producto4">TARJETA DE VIDEOS</label>
+    <select id="producto4" name="producto4" class="controls">
+        <option value="0">Selecciona una opción</option>
+        <option value="10">Producto 1 ($10)</option>
+        <option value="20">Producto 2 ($20)</option>
+        <option value="30">Producto 3 ($30)</option>
+    </select>
+    <br>
+
+    <!-- Quinto dropdown list de productos -->
+    <label for="producto5">DISCOS DUROS</label>
+    <select id="producto5" name="producto5" class="controls">
+        <option value="0">Selecciona una opción</option>
+        <option value="10">Producto 1 ($10)</option>
+        <option value="20">Producto 2 ($20)</option>
+        <option value="30">Producto 3 ($30)</option>
+    </select>
+    <br>
+
+    <!-- Sextodropdown list de productos -->
+    <label for="producto6">COMBO TECLADO + MOUSE</label>
+    <select id="producto6" name="producto6" class="controls">
+        <option value="0">Selecciona una opción</option>
+        <option value="10">Producto 1 ($10)</option>
+        <option value="20">Producto 2 ($20)</option>
+        <option value="30">Producto 3 ($30)</option>
+    </select>
+    <br>
+
+    <!-- Septimo dropdown list de productos -->
+    <label for="producto7">MONITORES</label>
+    <select id="producto7" name="producto7" class="controls">
+        <option value="0">Selecciona una opción</option>
+        <option value="10">Producto 1 ($10)</option>
+        <option value="20">Producto 2 ($20)</option>
+        <option value="30">Producto 3 ($30)</option>
+    </select>
+    <br>
+    
+    <label for="total">Total:</label>
+    <input type="text" id="total" name="total" value="$0" readonly>
+
+<script>
+    // Obtener los elementos select y input
+        const producto1 = document.getElementById('producto1');
+        const producto2 = document.getElementById('producto2');
+        const producto3 = document.getElementById('producto3');
+        const producto4 = document.getElementById('producto4');
+        const producto5 = document.getElementById('producto5');
+        const producto6 = document.getElementById('producto6');
+        const producto7 = document.getElementById('producto7');
+        const total = document.getElementById('total');
+
+        // Agregar un evento change a cada uno de los elementos select
+        producto1.addEventListener('change', calcularTotal);
+        producto2.addEventListener('change', calcularTotal);
+        producto3.addEventListener('change', calcularTotal);
+        producto4.addEventListener('change', calcularTotal);
+        producto5.addEventListener('change', calcularTotal);
+        producto6.addEventListener('change', calcularTotal);
+        producto7.addEventListener('change', calcularTotal);
+        // Función para calcular el total
+        function calcularTotal() {
+        const precio1 = parseInt(producto1.value);
+        const precio2 = parseInt(producto2.value);
+        const precio3 = parseInt(producto3.value);
+        const precio4 = parseInt(producto4.value);
+        const precio5 = parseInt(producto5.value);
+        const precio6 = parseInt(producto6.value);
+        const precio7 = parseInt(producto7.value);
+        const suma = precio1 + precio2 + precio3 + precio4 + precio5 + precio6 + precio7;
+
+        // Actualizar el valor del elemento input
+        total.value = `$${suma}`;
+        }
+
+
+</script>
+</body>
+
+</html>
